@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=no"
+  />
+
+  <link rel="icon" href="../images/icon-squirrel.png" />
+
+  <title>청공모</title>
+
+  <script src="../js/html5shiv.js"></script>
+  <link rel="stylesheet" href="../css/reset.css" />
+
+  <!-- Link Swiper's CSS -->
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- css 초기화 파일 적용 -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- Anime.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+<div class="modal">
+</div>
+<div class="wrap">
+  <!-- 상단 -->
+  <header class="header">
+    <div class="inner">
+      <div class="header-up clearfix">
+        <div class="header-left">
+          <a href="index.html" alt="청공모" class="logo"></a>
+          <form class="search">
+            <input
+                    type="text"
+                    class="search-text"
+                    maxlength="255"
+                    placeholder="검색어를 입력해주세요."
+            />
+            <input type="button" class="search-bt" />
+            <input type="reset" class="search-reset" />
+          </form>
+        </div>
+        <div class="header-right">
+          <ul class="member-list">
+            <li><a href="#">게시판</a></li>
+            <li><a href="#">로그인</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--// 상단 -->
+
+  <!-- 티켓랭킹 -->
+  <section class="ticket">
+    <div class="inner">
+      <div class="section-top">
+        <div class="btns">
+          <a href="#">뮤지컬</a>
+          <a href="#">클래식</a>
+          <a href="#">연극</a>
+          <a href="#">서커스/마술</a>
+          <a href="#">국악</a>
+          <a href="#">대중음악</a>
+          <a href="#">무용</a>
+          <a href="#">아동</a>
+        </div>
+      </div>
+      <div class="section-slide">
+        <button class="sw-bt sw-prev">이전</button>
+        <button class="sw-bt sw-next">다음</button>
+
+        <!-- Ticket Swiper -->
+        <div class="swiper sw-ticket">
+          <div class="swiper-wrapper">
+            <!-- json 연동 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- js 파일 로딩 -->
+<script src="../js/index.js"></script>
+<script src="../js/ticket.js"></script>
+</body>
+</html>
